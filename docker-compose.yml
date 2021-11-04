@@ -23,6 +23,7 @@ services:
       - /home/musicbrainz/artwork-redirect/vhost.d:/etc/nginx/vhost.d
       - html:/usr/share/nginx/html
       - ./redirect.json:/etc/nginx/html/redirect.json
+      - ./redirect.jpg:/etc/nginx/html/redirect.jpg
       - ./proxy.conf:/etc/nginx/proxy.conf
       - /var/run/docker.sock:/tmp/docker.sock:ro
     labels:
